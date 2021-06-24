@@ -138,13 +138,7 @@
                           <suiteXmlFiles>
                             <suiteXmlFile>testng.xml</suiteXmlFile>
                           </suiteXmlFiles>
-                            
-                          <systemPropertyVariables>
-						    <executionBrowser>${browser}</executionBrowser>
-						    <appURL>${urlToBeTested}</appURL>
-					      </systemPropertyVariables>
-
-                       </configuration>
+                        </configuration>
                       </plugin>
                 </plugins>
             </build>
