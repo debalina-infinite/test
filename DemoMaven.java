@@ -9,9 +9,10 @@ public class DemoMaven {
     public static void main(String[] args) throws InterruptedException{
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.get("http://demo.automationtesting.in");
-        driver.findElement(By.id("email")).sendKeys("email@gmail.com");
-        driver.findElement(By.id("enterimg")).click();
+        driver.get("http://localhost:3000");
+        driver.findElement(By.className("inputarea")).sendKeys("bob");
+        driver.findElement(By.cssSelector("input[type='password'")).sendKeys("bob123");
+        driver.findElement(By.cssSelector("input[type='submit']")).click();
         Thread.sleep(3000);
         driver.quit();
     }
